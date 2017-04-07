@@ -21,8 +21,8 @@ public class DataGet {
     //Imported Unirest Library to pull all data and parse JSON into objects
     public ArrayList<Card> grabber() throws Exception {
         //mashape url + key grab, this grabs only "minion" type cards
-        HttpResponse<JsonNode> response = Unirest.get("https://omgvamp-hearthstone-v1.p.mashape.com/cards/types/Minion")
-                .header("X-Mashape-Key", "W4S5VWkaH1msh4JqoHo99DS9umjVp1cGIPIjsnO8vZRFUtjk99")
+        HttpResponse<JsonNode> response = Unirest.get("/* any unirest API */ ")
+                .header("Key")
                 .header("Accept", "application/json")
                 .asJson();
 
